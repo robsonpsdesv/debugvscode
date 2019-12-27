@@ -6,9 +6,6 @@ const app = express()
 app.get('/', (req, res) => {
   const users = getUsers()
 
-  console.log('CHEGOU AQUI')
-  console.log(users)
-
   return res.json({ users })
 })
 
